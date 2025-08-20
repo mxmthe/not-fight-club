@@ -1,0 +1,96 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  background: #fff;
+  color: #111;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap { 
+  max-width: 720px; 
+  display: flex;
+  flex-direction: column;
+}
+h1 { 
+  font-size: 48px; 
+  margin: 0 0 24px; 
+}
+label { 
+  display: block; 
+  font-size: 28px; 
+  margin: 24px 0 12px; 
+}
+input[type="text"] {
+  width: 70%; 
+  font-size: 32px; 
+  padding: 14px 18px;
+  border: 2px solid #c9d6f0; 
+  border-radius: 12px; 
+  outline: none;
+}
+input[type="text"]:focus { 
+  border-color: #7aa8ff; 
+  box-shadow: 0 0 0 3px rgba(122,168,255,.25); 
+}
+button {
+  display: inline-block; 
+  margin-top: 28px; 
+  font-size: 32px; 
+  padding: 16px 28px;
+  background: #f2f2f2; 
+  border: 2px solid #cfcfcf; 
+  border-radius: 14px; 
+  cursor: pointer;
+}
+button:hover { 
+  background: #eaeaea; 
+}
+.hint { 
+  margin-top: 10px; 
+  color: #666; 
+  font-size: 16px; 
+}
+
+
+.left-menu__content {
+  position: relative;
+  margin-left: 10px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: azure;
+}
+.right-menu__content {
+  position: relative;
+  margin-right: 0;
+  gap: 10px;
+
+}
+.right_btn {
+  height: 70px;
+  border-radius: 14px;
+  margin-right: 20px;
+}
+nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  padding-bottom: 10px;
+  border-bottom: 7px solid #ffffff;
+}
+.menu-container {
+  background-image: url(./images/blackbgc.jpg);
+  max-height: 100vh;
+  background-repeat: round;
+  background-size: contain;
+}
+.menu-icon {
+  width: 40px;
+  height: 36px;
+}
+
+ 
