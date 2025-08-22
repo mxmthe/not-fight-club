@@ -4,9 +4,6 @@ body {
   background: #fff;
   color: #111;
   min-height: 100svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .wrap { 
   max-width: 720px; 
@@ -92,5 +89,40 @@ nav {
   width: 40px;
   height: 36px;
 }
+.fight-btn {
+  font-size: 20px;
+  justify-content: center;
+}
+
+#view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+}
+
+.profile-screen {
+  font-size: 50px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 120px;
+}
+
+.avatar {
+  width: 300px;
+  height: 400px;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-screen {
+  display: flex;
+  align-items: center;
+}
+
+
 
  
