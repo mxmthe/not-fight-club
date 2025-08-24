@@ -17,7 +17,7 @@ if (form) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const view = document.getElementById('view');
-  if (!view) return; // если это не main-menu, выходим
+  if (!view) return; 
 
   const actions = document.querySelector('.right-menu__content');
   const name = localStorage.getItem('char_name') || 'Player';
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: "Mage", img: "images/hero4.png" }
   ];
 
-  // читаем выбранного героя из localStorage (по умолчанию 0)
+
   function getHeroIndex() {
     const i = Number(localStorage.getItem('selected_hero_index'));
     return Number.isInteger(i) && i >= 0 && i < HEROES.length ? i : 0;
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hero = HEROES[i];
     const player = localStorage.getItem('char_name') || 'Player';
 
-  // function renderProfile() {
+
     view.innerHTML = `
       <section class="profile-screen">
         <div class="avatar-wrap">
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const nextBtn = document.getElementById('nextHero');
 
       function update(toIndex) {
-        const idx = (toIndex + HEROES.length) % HEROES.length; // кольцевой
+        const idx = (toIndex + HEROES.length) % HEROES.length; 
         setHeroIndex(idx);
         imgEl.src = HEROES[idx].img;
         imgEl.alt = HEROES[idx].name;
@@ -105,14 +105,14 @@ document.addEventListener('DOMContentLoaded', () => {
       prevBtn.addEventListener('click', () => update(getHeroIndex() - 1));
       nextBtn.addEventListener('click', () => update(getHeroIndex() + 1));
 
-      // стрелки на клавиатуре
+
       const keyHandler = (e) => {
         if (e.key === 'ArrowLeft') update(getHeroIndex() - 1);
         if (e.key === 'ArrowRight') update(getHeroIndex() + 1);
       };
       document.addEventListener('keydown', keyHandler, { once: false });
 
-      // свайп на мобильном
+
       let sx = 0;
       imgEl.addEventListener('touchstart', (e) => sx = e.touches[0].clientX, { passive: true });
       imgEl.addEventListener('touchend', (e) => {
