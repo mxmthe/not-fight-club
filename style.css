@@ -116,13 +116,23 @@ nav {
 .profile-info {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
 }
 
 .home-screen {
   display: flex;
   align-items: center;
 }
-
+.hero-controls {
+  justify-content: space-between;
+}
+.hero-btn {
+  font-size: 30px;
+  width: 80px;
+  height: 70px;
+  padding: 0;
+  margin-left: 45px;
+}
 
 
  
