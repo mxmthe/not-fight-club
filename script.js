@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hero = HEROES[i];
     const player = localStorage.getItem('char_name') || 'Player';
 
-  function renderProfile() {
+  // function renderProfile() {
     view.innerHTML = `
       <section class="profile-screen">
         <div class="avatar-wrap">
@@ -126,3 +126,4 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderSettings() {
       view.innerHTML = `<h2>Settings</h2><p>Coming soon…</p>`;
     };
+  });
